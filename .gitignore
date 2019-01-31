@@ -1,0 +1,9 @@
+# folders
+preprocess_src/.ipynb_checkpoints/
+
+# packages
+*.zip
+*.tar
+*.gz
+
+
