@@ -1,67 +1,67 @@
 Accuracy;Classifier Definition;Source File
-0.45576195443856043;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=100)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.47159179553472713;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=120)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.4125738726447065;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=20)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.41450769667517934;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=50)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.42885593610151906;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=80)";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4554817520464882;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=100)";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4776351592653488;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=120)";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.385474227959546;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=20)";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4178936693541813;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=50)";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.437525612921685;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=80)";../preprocessed-csv/groups_Xtrain_mean_std.csv
 0.3680679313342221;AdaBoostClassifier(n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std.csv
 0.3680679313342221;AdaBoostClassifier(n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
 0.3680679313342221;AdaBoostClassifier(n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.7148109403811986;ExtraTreesClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.7305350767727685;ExtraTreesClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.7060631722615581;"ExtraTreesClassifier(n_jobs=threads, n_estimators=50, criterion=""entropy"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.8472315626584478;GaussianNB();../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.1338256929454879;KNeighborsClassifier(n_jobs=threads, n_neighbors=100);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.15033117980438646;"KNeighborsClassifier(n_jobs=threads, n_neighbors=100, weights=""distance"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.13203004128466106;KNeighborsClassifier(n_jobs=threads, n_neighbors=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.12889146068791443;KNeighborsClassifier(n_jobs=threads, n_neighbors=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.263904733763469;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.5322063030411859;"LinearDiscriminantAnalysis(solver=""eigen"", shrinkage=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.2638992223361438;"LinearDiscriminantAnalysis(solver=""lsqr"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.263904733763469;"LinearDiscriminantAnalysis(solver=""svd"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.46753160544340533;"LogisticRegression(multi_class=""auto"", solver=""liblinear"", intercept_scaling=5)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.612348150175929;"LogisticRegression(n_jobs=threads, class_weight=""balanced"", penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.70382785617352;"LogisticRegression(n_jobs=threads, multi_class=""auto"", solver=""newton-cg"", max_iter=1000)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.36388211514968005;"LogisticRegression(n_jobs=threads, penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6756441133315164;RandomForestClassifier(n_jobs=threads, n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.5842036713543711;RandomForestClassifier(n_jobs=threads, n_estimators=100, max_depth=5);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6662390792960927;RandomForestClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6745689738500944;RandomForestClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.16239105328876005;"SVC(degree=1, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.16239105328876005;"SVC(degree=2, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.16239105328876005;"SVC(gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.14441771929138036;SVC(gamma=0.1);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.12243819178362195;"SVC(kernel=""sigmoid"", gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.45576195443856043;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=100)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.47159179553472713;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=120)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.4125738726447065;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=20)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.41450769667517934;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=50)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.42885593610151906;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=80)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.6755697447688699;ExtraTreesClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.6638575933686949;ExtraTreesClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.6600075685305137;"ExtraTreesClassifier(n_jobs=threads, n_estimators=50, criterion=""entropy"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.9546834936693464;GaussianNB();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.6796741557422921;KNeighborsClassifier(n_jobs=threads, n_neighbors=100);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.7129515307728096;"KNeighborsClassifier(n_jobs=threads, n_neighbors=100, weights=""distance"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.779808427608738;KNeighborsClassifier(n_jobs=threads, n_neighbors=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.7353194572396619;KNeighborsClassifier(n_jobs=threads, n_neighbors=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.34858899968586193;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.24556776224610274;"LinearDiscriminantAnalysis(solver=""eigen"", shrinkage=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.3487066467446855;"LinearDiscriminantAnalysis(solver=""lsqr"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.34858899968586193;"LinearDiscriminantAnalysis(solver=""svd"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.5944929440760691;"LogisticRegression(multi_class=""auto"", solver=""liblinear"", intercept_scaling=5)";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.7167507042762015;"LogisticRegression(n_jobs=threads, class_weight=""balanced"", penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.7105687397833965;"LogisticRegression(n_jobs=threads, multi_class=""auto"", solver=""newton-cg"", max_iter=1000)";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.7062264925691615;"LogisticRegression(n_jobs=threads, penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.649117892354664;RandomForestClassifier(n_jobs=threads, n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.6501573531660425;RandomForestClassifier(n_jobs=threads, n_estimators=100, max_depth=5);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.6349181586161751;RandomForestClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.6593448345871207;RandomForestClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.9384619807523158;"SVC(degree=1, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.9384619807523158;"SVC(degree=2, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.9384619807523158;"SVC(gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.936460406478222;SVC(gamma=0.1);../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.12381750212844952;"SVC(kernel=""sigmoid"", gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4554817520464882;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=100)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.4776351592653488;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=120)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.385474227959546;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=20)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.4178936693541813;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=50)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.437525612921685;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=80)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
 0.3680679313342221;AdaBoostClassifier(n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
 0.3680679313342221;AdaBoostClassifier(n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
 0.3680679313342221;AdaBoostClassifier(n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.7394861440061229;ExtraTreesClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.7255776551697188;ExtraTreesClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.7119410510924234;"ExtraTreesClassifier(n_jobs=threads, n_estimators=50, criterion=""entropy"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.8472315626584478;GaussianNB();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.13404567814000654;KNeighborsClassifier(n_jobs=threads, n_neighbors=100);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.14673030988104924;"KNeighborsClassifier(n_jobs=threads, n_neighbors=100, weights=""distance"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.12896222746819322;KNeighborsClassifier(n_jobs=threads, n_neighbors=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.12876299519218626;KNeighborsClassifier(n_jobs=threads, n_neighbors=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.12148350870165953;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.09035367759761652;"LinearDiscriminantAnalysis(solver=""eigen"", shrinkage=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.12112229587896685;"LinearDiscriminantAnalysis(solver=""lsqr"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.12148350870165953;"LinearDiscriminantAnalysis(solver=""svd"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.4164396454963263;"LogisticRegression(multi_class=""auto"", solver=""liblinear"", intercept_scaling=5)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.3460715527443008;"LogisticRegression(n_jobs=threads, class_weight=""balanced"", penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.7093858956586009;"LogisticRegression(n_jobs=threads, multi_class=""auto"", solver=""newton-cg"", max_iter=1000)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.36411967036519255;"LogisticRegression(n_jobs=threads, penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6714673989690161;RandomForestClassifier(n_jobs=threads, n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.589070992541731;RandomForestClassifier(n_jobs=threads, n_estimators=100, max_depth=5);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6434006754103696;RandomForestClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6500046048264508;RandomForestClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.15013251107863243;"SVC(degree=1, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.15013251107863243;"SVC(degree=2, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.15013251107863243;"SVC(gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.14423147258236602;SVC(gamma=0.1);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.12243819178362195;"SVC(kernel=""sigmoid"", gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.6629653299872347;ExtraTreesClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.675248769685014;ExtraTreesClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.6501021796339355;"ExtraTreesClassifier(n_jobs=threads, n_estimators=50, criterion=""entropy"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.9546834936693464;GaussianNB();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.8863056553562013;KNeighborsClassifier(n_jobs=threads, n_neighbors=100);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.9409141813368875;"KNeighborsClassifier(n_jobs=threads, n_neighbors=100, weights=""distance"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.9492316733240125;KNeighborsClassifier(n_jobs=threads, n_neighbors=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.9470241350630845;KNeighborsClassifier(n_jobs=threads, n_neighbors=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.34858899968586193;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3035801919938727;"LinearDiscriminantAnalysis(solver=""eigen"", shrinkage=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3487066467446855;"LinearDiscriminantAnalysis(solver=""lsqr"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.34858899968586193;"LinearDiscriminantAnalysis(solver=""svd"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.5758812926376707;"LogisticRegression(multi_class=""auto"", solver=""liblinear"", intercept_scaling=5)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.7639180403550914;"LogisticRegression(n_jobs=threads, class_weight=""balanced"", penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.7589237134223206;"LogisticRegression(n_jobs=threads, multi_class=""auto"", solver=""newton-cg"", max_iter=1000)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.7428884961064557;"LogisticRegression(n_jobs=threads, penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.6523048024903022;RandomForestClassifier(n_jobs=threads, n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.6447298535245298;RandomForestClassifier(n_jobs=threads, n_estimators=100, max_depth=5);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.6437937721840707;RandomForestClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.6502149238648798;RandomForestClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.9546834936693464;"SVC(degree=1, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.9546834936693464;"SVC(degree=2, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.9546834936693464;"SVC(gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.9546834936693464;SVC(gamma=0.1);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.6246888482971009;"SVC(kernel=""sigmoid"", gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv

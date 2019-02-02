@@ -27,9 +27,12 @@ class KFoldCrossValidator:
     def get_accuracy_scores(self):
         X = self._parse_X()
         X = self._label_encode(X)
+        X = X.astype(float)
+        X = X[:, 2:]
 
         groupsdata = self._parse_groups_data()
         groupsdata = self._label_encode(groupsdata)
+        groupsdata = groupsdata.astype(int)
 
         results = self.run_cross_validation(X, groupsdata)
         sorted_results = sorted(results, key=lambda tup: tup[0])
@@ -49,7 +52,9 @@ class KFoldCrossValidator:
     @staticmethod
     def _calc_model_accuracy(X, classifier, test, train, y):
         model = classifier[1]
-        model.fit(np.take(X, train, axis=0), np.take(y, train))
+        x_train = np.take(X, train, axis=0)
+        y_train = np.take(y, train)
+        model.fit(x_train, y_train)
         pred = model.predict(np.take(X, test, axis=0))
         score = accuracy_score(np.take(y, test), pred, classifier)
         return score, classifier[0]
@@ -78,7 +83,7 @@ class KFoldCrossValidator:
 
     def _label_encode(self, data):
         data[:, 2] = self._label_encoder.fit_transform(data[:, 2])
-        return data.astype(int)
+        return data
 
 
 def main():
