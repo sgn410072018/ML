@@ -6,4 +6,11 @@
 *.tar
 *.gz
 
+# pycharm project metadata
+.idea
 
+# lock files
+.~lock*
+
+# cache
+__pycache__
