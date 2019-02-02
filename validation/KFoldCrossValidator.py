@@ -6,12 +6,21 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import csv
+from itertools import groupby
+
+# how many times the cross validation shuffles and folds the data
+N_SHUFFLES_AND_FOLDS = 25
+
+# file paths
+GROUPS_FILE_PATH = "../train_data/groups.csv"
+VALIDATION_RESULTS_FILE_PATH = "validation_results.csv"
+PREPROCESSED_CSV_FILE_PATH = "../preprocessed-csv"
 
 
 class KFoldCrossValidator:
 
     def __init__(self, test_file_path):
-        self._groups_file = "../train_data/groups.csv"
+        self._groups_file = GROUPS_FILE_PATH
         self._X_train_file = test_file_path
         self._label_encoder = LabelEncoder()
 
@@ -22,11 +31,11 @@ class KFoldCrossValidator:
         groupsdata = self._parse_groups_data()
         groupsdata = self._label_encode(groupsdata)
 
-        results = self.run_cross_validation(X, groupsdata, 10)
+        results = self.run_cross_validation(X, groupsdata)
         sorted_results = sorted(results, key=lambda tup: tup[0])
         return sorted_results
 
-    def run_cross_validation(self, X, groupsdata, folds):
+    def run_cross_validation(self, X, groupsdata, folds=N_SHUFFLES_AND_FOLDS):
         groups = groupsdata[:, 1]
         y = groupsdata[:, 2]
         gss = GroupShuffleSplit(random_state=1, n_splits=folds, test_size=0.2, train_size=0.8)
@@ -39,11 +48,11 @@ class KFoldCrossValidator:
 
     @staticmethod
     def _calc_model_accuracy(X, classifier, test, train, y):
-        model = classifier
+        model = classifier[1]
         model.fit(np.take(X, train, axis=0), np.take(y, train))
         pred = model.predict(np.take(X, test, axis=0))
         score = accuracy_score(np.take(y, test), pred, classifier)
-        return score, classifier
+        return score, classifier[0]
 
     def _parse_X(self):
         X = pd.read_csv(self._X_train_file)
@@ -72,42 +81,41 @@ class KFoldCrossValidator:
         return data.astype(int)
 
 
-if __name__ == "__main__":
-    p = Path("../preprocessed-csv")
+def main():
+    p = Path(PREPROCESSED_CSV_FILE_PATH)
     csv_filenames = list(p.glob('*.csv'))
-    with open('validation_results.csv', 'w') as file:
+    with open(VALIDATION_RESULTS_FILE_PATH, 'w') as file:
+        writer = csv.writer(file, delimiter=';')
+        writer.writerow(['Accuracy', 'Classifier Definition', 'Source File'])
         total_scores = []
         for csv_filename in csv_filenames:
-            filename_str = str(csv_filename)
-            kFoldValidator = KFoldCrossValidator(filename_str)
-            scores = kFoldValidator.get_accuracy_scores()
-            scores = [(tup) + (filename_str,)for tup in scores]
-            total_scores += scores
+            total_scores += calc_classifier_scores_for_file(csv_filename)
 
-        writer = csv.writer(file, delimiter=';')
-        writer.writerows(total_scores)
+        grouped_by_mean_and_file = group_by_mean_and_file(total_scores)
+
+        writer.writerows(grouped_by_mean_and_file)
 
 
+def calc_classifier_scores_for_file(csv_filename):
+    filename_str = str(csv_filename)
+    k_fold_validator = KFoldCrossValidator(filename_str)
+    scores = k_fold_validator.get_accuracy_scores()
+    scores = [tup + (filename_str,) for tup in scores]
+    return scores
 
 
+def group_by_mean_and_file(total_scores):
+    grouped_mean_by_file = []
+    total_scores = sorted(total_scores, key=lambda tup: tup[2])
 
-'''
+    for k, g in groupby(total_scores, lambda tup: tup[2]):
+        file_scores = sorted(list(g), key=lambda tup: tup[1])
 
-X_test = np.load(X_test_file)
-model = SVC(gamma="auto")
-model.fit(X, y)
-X_test_means = X_test.mean(2)
-X_test_vars = X_test.var(2)
-X_test = np.concatenate((X_test_means, X_test_vars), axis=1)
-X_test = X_test[:, [4, 5, 6, 7, 8, 9, 14, 15, 16, 17]]
-X_test = scaler.fit_transform(X_test)
+        for k2, g2 in groupby(file_scores, lambda tup: tup[1]):
+            grouped_mean_by_file.append((np.mean([cell[0] for cell in list(g2)]), k2, k))
 
-y_pred = model.predict(X_test)
-print(y_pred.astype(str))
-labels = list(labelencoder.inverse_transform(y_pred))
-print(labels)
-with open("submission.csv", "w") as fp:
-    fp.write("# Id,Surface\n")
-    for i, label in enumerate(labels):
-        fp.write("%d,%s\n" % (i, label))
-'''
+    return grouped_mean_by_file
+
+
+if __name__ == "__main__":
+    main()
