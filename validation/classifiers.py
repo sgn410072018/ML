@@ -12,6 +12,15 @@ from sklearn.naive_bayes import GaussianNB
 # Some classifiers utilize multiprocessing, this should be <= the amount of logical CPU cores in a system
 threads = 4
 
+classifiers_pakollinen= [
+    ('LinearDiscriminantAnalysis()', LinearDiscriminantAnalysis()),
+    ('SVC(kernel="linear")', SVC(kernel="linear")),
+    ('SVC(kernel="rbf")', SVC(kernel="linear")),
+    ('SVC(kernel="rbf")', SVC(kernel="linear")),
+    ('LogisticRegression(n_jobs=4, multi_class="auto", solver="newton-cg", max_iter=1000)', LogisticRegression(n_jobs=4, multi_class="auto", solver="newton-cg", max_iter=1000)),
+    ('RandomForestClassifier(n_jobs=4, n_estimators=100)', RandomForestClassifier(n_jobs=4, n_estimators=100))
+]
+
 classifiers= [
     ('KNeighborsClassifier(n_jobs=threads, n_neighbors=20)', KNeighborsClassifier(n_jobs=threads, n_neighbors=20)),
     ('KNeighborsClassifier(n_jobs=threads, n_neighbors=50)', KNeighborsClassifier(n_jobs=threads, n_neighbors=50)),

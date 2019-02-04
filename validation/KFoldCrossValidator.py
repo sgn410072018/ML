@@ -28,7 +28,7 @@ class KFoldCrossValidator:
         X = self._parse_X()
         X = self._label_encode(X)
         X = X.astype(float)
-        X = X[:, 2:]
+        X = X[:, 3:]
 
         groupsdata = self._parse_groups_data()
         groupsdata = self._label_encode(groupsdata)
