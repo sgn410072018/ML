@@ -1,67 +1,121 @@
 Accuracy;Classifier Definition;Source File
-0.4554817520464882;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=100)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.4776351592653488;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=120)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.385474227959546;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=20)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.4178936693541813;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=50)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.437525612921685;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=80)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.3680679313342221;AdaBoostClassifier(n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.3680679313342221;AdaBoostClassifier(n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.3680679313342221;AdaBoostClassifier(n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6755697447688699;ExtraTreesClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6638575933686949;ExtraTreesClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6600075685305137;"ExtraTreesClassifier(n_jobs=threads, n_estimators=50, criterion=""entropy"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.9546834936693464;GaussianNB();../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6796741557422921;KNeighborsClassifier(n_jobs=threads, n_neighbors=100);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.7129515307728096;"KNeighborsClassifier(n_jobs=threads, n_neighbors=100, weights=""distance"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.779808427608738;KNeighborsClassifier(n_jobs=threads, n_neighbors=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.7353194572396619;KNeighborsClassifier(n_jobs=threads, n_neighbors=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.34858899968586193;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.24556776224610274;"LinearDiscriminantAnalysis(solver=""eigen"", shrinkage=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.3487066467446855;"LinearDiscriminantAnalysis(solver=""lsqr"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.34858899968586193;"LinearDiscriminantAnalysis(solver=""svd"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.5944929440760691;"LogisticRegression(multi_class=""auto"", solver=""liblinear"", intercept_scaling=5)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.7167507042762015;"LogisticRegression(n_jobs=threads, class_weight=""balanced"", penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.7105687397833965;"LogisticRegression(n_jobs=threads, multi_class=""auto"", solver=""newton-cg"", max_iter=1000)";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.7062264925691615;"LogisticRegression(n_jobs=threads, penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.649117892354664;RandomForestClassifier(n_jobs=threads, n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6501573531660425;RandomForestClassifier(n_jobs=threads, n_estimators=100, max_depth=5);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6349181586161751;RandomForestClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.6593448345871207;RandomForestClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.9384619807523158;"SVC(degree=1, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.9384619807523158;"SVC(degree=2, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.9384619807523158;"SVC(gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.936460406478222;SVC(gamma=0.1);../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.12381750212844952;"SVC(kernel=""sigmoid"", gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std.csv
-0.4554817520464882;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=100)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.4776351592653488;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=120)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.385474227959546;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=20)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.4178936693541813;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=50)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.437525612921685;"AdaBoostClassifier(algorithm=""SAMME"", n_estimators=80)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.3680679313342221;AdaBoostClassifier(n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.3680679313342221;AdaBoostClassifier(n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.3680679313342221;AdaBoostClassifier(n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6629653299872347;ExtraTreesClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.675248769685014;ExtraTreesClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6501021796339355;"ExtraTreesClassifier(n_jobs=threads, n_estimators=50, criterion=""entropy"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.9546834936693464;GaussianNB();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.8863056553562013;KNeighborsClassifier(n_jobs=threads, n_neighbors=100);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.9409141813368875;"KNeighborsClassifier(n_jobs=threads, n_neighbors=100, weights=""distance"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.9492316733240125;KNeighborsClassifier(n_jobs=threads, n_neighbors=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.9470241350630845;KNeighborsClassifier(n_jobs=threads, n_neighbors=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.34858899968586193;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.3035801919938727;"LinearDiscriminantAnalysis(solver=""eigen"", shrinkage=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.3487066467446855;"LinearDiscriminantAnalysis(solver=""lsqr"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.34858899968586193;"LinearDiscriminantAnalysis(solver=""svd"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.5758812926376707;"LogisticRegression(multi_class=""auto"", solver=""liblinear"", intercept_scaling=5)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.7639180403550914;"LogisticRegression(n_jobs=threads, class_weight=""balanced"", penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.7589237134223206;"LogisticRegression(n_jobs=threads, multi_class=""auto"", solver=""newton-cg"", max_iter=1000)";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.7428884961064557;"LogisticRegression(n_jobs=threads, penalty=""l2"", multi_class=""auto"", solver=""lbfgs"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6523048024903022;RandomForestClassifier(n_jobs=threads, n_estimators=100);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6447298535245298;RandomForestClassifier(n_jobs=threads, n_estimators=100, max_depth=5);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6437937721840707;RandomForestClassifier(n_jobs=threads, n_estimators=20);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6502149238648798;RandomForestClassifier(n_jobs=threads, n_estimators=50);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.9546834936693464;"SVC(degree=1, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.9546834936693464;"SVC(degree=2, gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.9546834936693464;"SVC(gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.9546834936693464;SVC(gamma=0.1);../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
-0.6246888482971009;"SVC(kernel=""sigmoid"", gamma=""auto"")";../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.24647887323943662;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.2511737089201878;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.28823529411764703;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.2979942693409742;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.2979942693409742;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.3;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.3092269326683292;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.34663341645885287;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4253164556962025;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4302600472813239;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4320388349514563;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4368932038834951;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4562647754137116;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.47341772151898737;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.5015974440894568;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.5049751243781094;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.5271565495207667;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.532608695652174;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.5671641791044776;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.595108695652174;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.13043478260869565;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.18181818181818182;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.21428571428571427;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.21980676328502416;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.22075055187637968;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.23039215686274508;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.23415977961432508;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.2642857142857143;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.2691415313225058;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.27486910994764396;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.28921568627450983;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.29152542372881357;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.29581151832460734;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.3016949152542373;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.3080568720379147;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.3109048723897912;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.3200883002207506;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.45260663507109006;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.4782608695652174;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.5217391304347826;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.10422535211267606;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.11846689895470383;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.17164179104477612;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.17770034843205576;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.19651741293532338;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.20153061224489796;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.23284313725490197;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.2818627450980392;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.28640776699029125;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.30612244897959184;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.3295774647887324;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.3422330097087379;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.3693467336683417;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.3915211970074813;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.4170731707317073;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.4271356783919598;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.4317073170731707;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.4513715710723192;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.47780678851174935;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.5404699738903395;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.0;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.10985915492957747;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.14029850746268657;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.16785714285714284;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.19402985074626866;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.22508038585209003;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.25136612021857924;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.26071428571428573;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.27011494252873564;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.27049180327868855;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.2709251101321586;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.27225130890052357;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.2737752161383285;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.27873563218390807;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.2968299711815562;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.39267015706806285;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.40192926045016075;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.46916299559471364;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.5273775216138329;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.6051873198847262;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
+0.01272264631043257;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.10406091370558376;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.14933333333333335;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.17664670658682635;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.18208092485549132;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.1984732824427481;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.22842639593908629;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.24489795918367346;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.264;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.29910714285714285;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.2994011976047904;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.3112244897959184;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.328125;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.3670886075949367;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.41040462427745666;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.45569620253164556;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.46534653465346537;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.528052805280528;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.6995305164319249;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.7065727699530516;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.05263157894736842;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.09330143540669857;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.1649214659685864;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.17603911980440098;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.19070904645476772;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.2714285714285714;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.28809523809523807;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3087248322147651;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3117206982543641;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3192019950124688;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3193717277486911;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3389261744966443;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3548387096774194;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.40217391304347827;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.43243243243243246;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.44021739130434784;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.4594594594594595;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.4973404255319149;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.4973404255319149;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.5046082949308756;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv

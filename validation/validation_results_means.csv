@@ -1,0 +1,13 @@
+Accuracy;Classifier Definition;Source File
+0.413588529583697;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.4084653195391768;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std.csv
+0.3666184591878163;LinearDiscriminantAnalysis();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.3071285224106692;LinearSVC();../preprocessed-csv/groups_Xtrain_mean_std_normalized_0-1.csv
+0.32901085858279006;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.22933233774532763;LinearSVC();../preprocessed-csv/task_4_accelerations_velocities_abs_mean_std_.csv
+0.32447668433650145;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_mean_std_.csv
+0.30107945755267823;LinearSVC();../preprocessed-csv/task_4_mean_std_.csv
+0.26901657563524467;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_meaned_.csv
+0.2654110364990492;LinearSVC();../preprocessed-csv/task_4_meaned_.csv
+0.23858245091340635;LinearDiscriminantAnalysis();../preprocessed-csv/task_4_stdied_.csv
+0.30040371069015365;LinearSVC();../preprocessed-csv/task_4_stdied_.csv
