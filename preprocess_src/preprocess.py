@@ -77,8 +77,8 @@ def accelerations_velocities_abs(numpy_data):
     numpy_data = remove_sensors(numpy_data, [0,1,2,3])
     return np.array(list(map(abs, numpy_data))) #, "acc and vel absed"
 
-# Transform quaternion [q1, q2, q3, q0] into Euler angles [phi, theta, psi]
-# or [qx, qy, qz, qw] into [x rotation, y rotation, z rotation].
+# Transform quaternion [q1, q2, q3, q0] = [qx, qy, qz, qw] into 
+# Euler angles [phi, theta, psi] = [x rotation, y rotation, z rotation].
 # Input can be 1D, 2D or 3D array. In 1D and 2D cases, the dimension representing
 # quaternion components must be 4. In 3D case, each array column must correspond
 # to quaternion cmoponent so that the 2nd dimension has length 4.
@@ -98,18 +98,19 @@ def quaternion_to_euler_angle(quaternions):
     
     anglesShape = list(quaternions.shape)
     anglesShape[1] = 3  # phi, theta, psi   
-    angles = -np.ones(anglesShape)
+    angles = -1 * np.ones(anglesShape)
     
 	# x rotation or phi
     angles[:,0,:] = np.arctan2(2.0*(Qw*Qx + Qy*Qz), 1.0 - 2.0*(Qx**2 + Qy**2))
     
 	# y rotation or theta
     argArcsin = 2.0*(Qw*Qy - Qz*Qx)
-    outOfBounds = np.abs(argArcsin) >= 1.0
+    outOfDomain = np.abs(argArcsin) >= 1.0
     theta = angles[:,1,:]
-    # If abs(argArcsin) >= 0, return pi/2 with the same sign as argArcsin 
-    theta[outOfBounds] = np.pi/2.0 * np.sign(argArcsin[outOfBounds])
-    theta[~outOfBounds] = np.arcsin(argArcsin[~outOfBounds])    
+    # If argArcsin is out of the domain of arcsin(), return pi/2 with 
+	# the same sign as argArcsin.
+    theta[outOfDomain] = np.pi/2.0 * np.sign(argArcsin[outOfDomain])
+    theta[~outOfDomain] = np.arcsin(argArcsin[~outOfDomain])    
     
 	# z rotation or psi
     angles[:,2,:] = np.arctan2(2.0*(Qw*Qz + Qx*Qy), 1.0 - 2.0*(Qy**2 + Qz**2))
