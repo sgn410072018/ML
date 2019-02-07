@@ -77,19 +77,22 @@ def accelerations_velocities_abs(numpy_data):
     numpy_data = remove_sensors(numpy_data, [0,1,2,3])
     return np.array(list(map(abs, numpy_data))) #, "acc and vel absed"
 
-# Transform quaternion [q1, q2, q3, q0] = [qx, qy, qz, qw] into 
+# Transforms quaternion [q1, q2, q3, q0] = [qx, qy, qz, qw] into 
 # Euler angles [phi, theta, psi] = [x rotation, y rotation, z rotation].
-# Input can be 1D, 2D or 3D array. In 1D and 2D cases, the dimension representing
-# quaternion components must be 4. In 3D case, each array column must correspond
-# to quaternion cmoponent so that the 2nd dimension has length 4.
-# Returns either 1D, 2D, or 3D array with 3 columns.
+# Input can be 1D, 2D or 3D array. 1D array must be of length 4, and for 2D and 3D
+# arrays the length of the 2nd dimension must be 4 so that each array column
+# corresponds to a component of a quaternion.
+# Returns either a 1D array of length 3, a n-by-3 array or a n-by-3-by-m array.
+# Note that 2D arrays of the shape 1-by-4 are taken as 1D arrays in the
+# sense that they get mapped to a 1D array of length 3.
 def quaternion_to_euler_angle(quaternions):
-    # Make compatible with n-by-4 arrays.
-    nDims = len(quaternions.shape)
+    # Make compatible with 4-by-0 and n-by-4 arrays.
+    dims = quaternions.shape
+    nDims = len(dims)
     if nDims == 1:
         quaternions = quaternions.reshape((1,4,1))
     elif nDims == 2:
-        quaternions = quaternions.reshape((-1,4,1))    
+        quaternions = quaternions.reshape((dims[0],4,1))    
         
     Qx = quaternions[:,0,:] # Q1
     Qy = quaternions[:,1,:] # Q2
@@ -100,19 +103,19 @@ def quaternion_to_euler_angle(quaternions):
     anglesShape[1] = 3  # phi, theta, psi   
     angles = -1 * np.ones(anglesShape)
     
-	# x rotation or phi
+    # x rotation or phi
     angles[:,0,:] = np.arctan2(2.0*(Qw*Qx + Qy*Qz), 1.0 - 2.0*(Qx**2 + Qy**2))
     
-	# y rotation or theta
+    # y rotation or theta
     argArcsin = 2.0*(Qw*Qy - Qz*Qx)
     outOfDomain = np.abs(argArcsin) >= 1.0
     theta = angles[:,1,:]
     # If argArcsin is out of the domain of arcsin(), return pi/2 with 
-	# the same sign as argArcsin.
+    # the same sign as argArcsin.
     theta[outOfDomain] = np.pi/2.0 * np.sign(argArcsin[outOfDomain])
     theta[~outOfDomain] = np.arcsin(argArcsin[~outOfDomain])    
     
-	# z rotation or psi
+    # z rotation or psi
     angles[:,2,:] = np.arctan2(2.0*(Qw*Qz + Qx*Qy), 1.0 - 2.0*(Qy**2 + Qz**2))
     
     # Remove excess dimensions if original array was not 3D.
@@ -120,7 +123,7 @@ def quaternion_to_euler_angle(quaternions):
         angles = angles.squeeze()
         
     return angles
-	
+
 
 # write to file for validation part
 def write_train_csv(numpy_data, filename):
